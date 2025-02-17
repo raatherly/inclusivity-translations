@@ -1,0 +1,25 @@
+pip install tensorflow==2.18.0
+pip install transformers==4.47.1
+pip install torch==2.5.1+cu124
+pip install spacy==3.7.5
+python -m spacy download fr_core_news_md
+pip install numpy==1.26.4
+pip install SPARQLWrapper==2.0.0
+pip install requests==2.32.3
+pip install pandas==2.2.2
+pip install regex==2024.11.6
+pip install pattern3==3.0.0
+git clone https://github.com/mapado/pynlg.git
+cd pynlg
+python setup.py install
+pip install -r requirements.txt
+cd ..
+mv pynlg pynlg2
+cd pynlg2
+mv pynlg ../
+pip install openpyxl==3.1.5
+pip install sentencepiece==0.2.0
+pip install inflect
+pip install gender_guesser
+code .venv\Lib\site-packages\pattern3\text\tree.py
+## In the above, modify line 36: add 'str'
